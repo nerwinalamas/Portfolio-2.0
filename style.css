@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAV BAR */
+.navbar {
+    height: 50px;
+    width: 100vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 60px;
+}
+
+.navbar ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+.navbar ul li {
+    width: 105px;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.whole-page {
+    top: 50px;
+    margin: 0 100px;
+}
+
+/* HOME */
+.whole-page .home {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+.whole-page .home .home-container {
+    margin-top: 100px;
+}
+
+.whole-page .home .home-container .home-image {
+    text-align: center;
+}
+
+.whole-page .home .home-container .home-image .id{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: solid;
+}
+
+.whole-page .home .home-container .home-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.whole-page .home .home-container .home-text span {
+    font-size: 28px;
+}
+
+/* ABOUT */
+.whole-page .about {
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.whole-page .about .about-image {
+    grid-column: 1/2;
+}
+
+.whole-page .about .about-image .laptop {
+    height: 400px;
+    width: 100%;
+}
+
+.whole-page .about .about-text {
+    grid-column: 2/3;
+    height: 400px;
+}
+
+.whole-page .about .about-text .about-title {
+    font-size: 42px;
+    font-weight: 500;
+    padding: 20px 20px 10px 20px;
+    margin: 10px;
+}
+
+.whole-page .about .about-text .about-message {
+    padding: 10px 20px 20px 20px;
+    line-height: 1.6;
+}
+
+.whole-page .about .about-text .about-btn {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 15px 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+
+    display: inline-block;
+}
+
+.whole-page .about .about-text .about-btn:hover {
+    color: white;
+    background: black;
+}
+
+/* PROJECT */
+.whole-page .project {
+    height: 500px;
+    padding-top: 70px;
+
+    /* width: 90%;
+    margin: 0 auto; */
+}
+
+.whole-page .project .project-title {
+    font-size: 42px;
+    font-weight: 500;
+    height: 10%;
+}
+
+.whole-page .project .project-message {
+    height: 10%;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.whole-page .project .project-container {
+    height: 70%;
+    display: grid;
+    place-items: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.whole-page .project .project-box {
+    width: 250px;
+    height: 300px;
+    background: white;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px gray;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.whole-page .project .project-box:hover {
+    transform: scale(1.07);
+    transition: 0.6s;
+}
+
+.whole-page .project .project-box .project-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    grid-row: 1/2;
+}
+
+.whole-page .project .project-box .project-desc {
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+
+    grid-row: 2/3;
+}
+
+.whole-page .project .project-box .project-desc h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.whole-page .project .project-box .project-desc .project-btn {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 7px 10px;
+    border: 1px solid black;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    display: inline-block;
+}
+
+.whole-page .project .project-box .project-desc .project-btn:hover {
+    color: white;
+    background: black;
+}
+
+/* SKILLS */
+.whole-page .skills {
+    margin-top: 70px;
+    height: 400px;
+
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.whole-page .skills .skills-title-container {
+    height: 100%;
+    width: 100%;
+    grid-row: 1/2;
+}
+
+.whole-page .skills .skills-title-container .skills-title {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.whole-page .skills .skills-container {
+    grid-row: 2/3;
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.whole-page .skills .skills-container .skill-set p {
+    margin-top: 5px;
+}
+
+.whole-page .skills .skills-container .skill-set img {
+    width: 40px;
+    height: 40px;
+}
+
+/* CONTACT */
+.whole-page .contact {
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.whole-page .contact .contact-title-container {
+    grid-row: 1/2;
+    text-align: center;
+    margin: auto 0;
+}
+
+.whole-page .contact .contact-title-container .contact-title {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.whole-page .contact .contact-maincontainer {
+    grid-row: 2/3;
+
+    display: grid;
+    place-items: center;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container {
+    width: 850px;
+    height: 450px;
+    box-shadow: 3px 3px 5px gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.whole-page .contact .contact-maincontainer .contact-container .input-form {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    display: inline-block;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container .input-form .input-field {
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container .input-form .input-field:nth-child(1) {
+    margin-top: 20px;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container .input-form textarea {
+    width: 350px;
+    height: 250px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container .input-form .input-btn {
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 7px 10px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 12px;
+
+    /* note: yung font size naka inline style sya ayaw kase
+    gumana pag external css ginawa */
+
+    display: inline-block;
+}
+
+.whole-page .contact .contact-maincontainer .contact-container .input-form .input-btn:hover {
+    color: white;
+    background: black;
+}
+
+/* FOOTER */
+.whole-page .footer {
+    margin-top: 100px;
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+.whole-page .footer .footer-contacts {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 150px 1fr 1fr 150px;
+}
+
+.whole-page .footer .footer-contacts  div img {
+    width: 50px;
+    height: 50px;
+}
+
+.whole-page .footer .footer-contacts  div p {
+    font-weight: 900;
+}
+
+.whole-page .footer .footer-contacts .fb, .gmail {
+    grid-row: 2/3;
+}
+
+.whole-page .footer  .footer-contacts .github, .mobile-num {
+    grid-row: 3/4;
+}
+
+.whole-page .footer  .footer-contacts .fb, .github {
+    grid-column: 2/3;
+}
+
+.whole-page .footer  .footer-contacts .gmail, .mobile-num {
+    grid-column: 3/4;
+}
+
+.whole-page .footer  .footer-contacts .fb {
+    display: flex;
+    align-items: center;
+}
+
+.whole-page .footer  .footer-contacts .fb p {
+    margin-left: 20px;
+}
+
+.whole-page .footer  .footer-contacts .github {
+    display: flex;
+    align-items: center;
+}
+
+.whole-page .footer  .footer-contacts .github p {
+    margin-left: 20px;
+}
+
+.whole-page .footer  .footer-contacts .gmail {
+    display: flex;
+    align-items: center;
+}
+
+.whole-page .footer  .footer-contacts .gmail p {
+    margin-left: 20px;
+}
+
+.whole-page .footer  .footer-contacts .mobile-num {
+    display: flex;
+    align-items: center;
+}
+
+.whole-page .footer  .footer-contacts .mobile-num p {
+    margin-left: 20px;
+}
+
+.whole-page .footer .footer-copyright {
+    text-align: center;
+    margin: auto 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+
+    grid-row: 2/3;
+}
