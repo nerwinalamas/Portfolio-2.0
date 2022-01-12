@@ -3,13 +3,14 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 /* NAV BAR */
 .navbar {
     height: 50px;
     width: 100vw;
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 60px;
 }
@@ -94,7 +95,7 @@
 }
 
 .whole-page .about .about-text .about-title {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: 500;
     padding: 20px 20px 10px 20px;
     margin: 10px;
@@ -103,6 +104,7 @@
 .whole-page .about .about-text .about-message {
     padding: 10px 20px 20px 20px;
     line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 .whole-page .about .about-text .about-btn {
@@ -133,7 +135,7 @@
 }
 
 .whole-page .project .project-title {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: 500;
     height: 10%;
 }
@@ -142,6 +144,7 @@
     height: 10%;
     line-height: 1.6;
     margin: 20px 0;
+    font-size: 0.9rem;
 }
 
 .whole-page .project .project-container {
@@ -182,7 +185,7 @@
 .whole-page .project .project-box .project-desc {
     text-align: center;
     margin: 10px;
-    font-size: 14px;
+    font-size: 0.8rem;
 
     grid-row: 2/3;
 }
@@ -224,11 +227,12 @@
 .whole-page .skills .skills-title-container {
     height: 100%;
     width: 100%;
+
     grid-row: 1/2;
 }
 
 .whole-page .skills .skills-title-container .skills-title {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -244,6 +248,7 @@
 
 .whole-page .skills .skills-container .skill-set p {
     margin-top: 5px;
+    font-size: 0.7rem;
 }
 
 .whole-page .skills .skills-container .skill-set img {
@@ -266,7 +271,7 @@
 }
 
 .whole-page .contact .contact-title-container .contact-title {
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -432,4 +437,228 @@
     font-size: 14px;
 
     grid-row: 2/3;
+}
+
+/* TABLET VIEW */
+
+/* MOBILE VIEW */
+@media(max-width: 375px) {
+
+    /* NAV BAR */
+    .navbar {
+        display: none;
+    }
+
+    /* WHOLE/ENTIRE PAGE */
+    .whole-page {
+        margin: 0;
+    }
+
+    /* HOME */
+    .whole-page .home {
+    }
+
+    /* ABOUT */
+    .whole-page .about {
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .whole-page .about .about-image {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .whole-page .about .about-text {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .whole-page .about .about-text .about-title {
+        margin: 0;
+    }
+
+    .whole-page .about .about-text .about-btn {
+        margin: 0 20px;
+    }
+
+    /* PROJECT */
+    .whole-page .project {
+        height: auto;
+    }
+
+    .whole-page .project .project-title {
+        padding: 0 0 10px 20px;
+    }
+
+    .whole-page .project .project-message { 
+        margin: 0;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .whole-page .project .project-container {
+        height: auto;
+
+        display: grid;
+    }
+
+    /* SKILLS */
+    .whole-page .skills {
+        height: auto;
+
+        display: grid;
+        grid-template-rows: 70px 1fr;
+    }
+
+    .whole-page .skills .skills-title-container  {
+        grid-row: 1/2;
+    }
+
+    .whole-page .skills .skills-title-container .skills-title {
+        padding: 0 0 10px 20px;
+    }
+
+    .whole-page .skills .skills-container {
+        grid-row: 2/3;
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .whole-page .skills .skills-container {
+        grid-row: 2/3;
+        margin: 10px;
+        margin: 0 auto;
+    }
+
+    .whole-page .skills .skills-container .skill-set {
+        margin: 5px;
+    }
+
+    .whole-page .skills .skills-container .skill-set:nth-child(1), .skill-set:nth-child(2) {
+        grid-row: 1/2;
+    }
+
+    .whole-page .skills .skills-container .skill-set:nth-child(3), .skill-set:nth-child(4) {
+        grid-row: 2/3;
+    }
+
+    .whole-page .skills .skills-container .skill-set:nth-child(5), .skill-set:nth-child(6) {
+        grid-row: 3/4;
+    }
+
+    .whole-page .skills .skills-container .skill-set:nth-child(7) {
+        grid-row: 4/5;
+    }
+
+    .whole-page .skills .skills-container .skill-set:nth-child(odd) {
+        grid-column: 1/2;
+    }
+
+    .whole-page .skills .skills-container .skill-set:nth-child(even){
+        grid-column: 2/3;
+    }
+
+
+    /* CONTACT */
+    .whole-page .contact {
+        height: auto;
+        display: grid;
+        grid-template-rows: 70px 1fr;
+    }
+
+    .whole-page .contact .contact-title-container {
+        width: auto;
+        grid-row: 1/2;
+        margin: 0;
+        text-align: start;
+    }
+
+    .whole-page .contact .contact-title-container .contact-title {
+        padding: 0 0 20px 20px;
+        margin-top: 50px;
+    }
+
+    .whole-page .contact .contact-maincontainer {
+        grid-row: 2/3;
+        display: grid;
+        place-items: center;
+    }
+
+    .whole-page .contact .contact-maincontainer .contact-container {
+        height: auto;
+        width: 90%;
+        margin-top: 50px;
+
+        display: flex;
+    }
+
+    .whole-page .contact .contact-maincontainer .contact-container img {
+        display: none;
+    }
+
+    .whole-page .contact .contact-maincontainer .contact-container .input-form .input-field {
+        width: 95%;
+    }
+    
+    .whole-page .contact .contact-maincontainer .contact-container .input-form textarea {
+        width: 95%;
+    }
+
+    .whole-page .contact .contact-maincontainer .contact-container .input-form .input-btn {
+        margin: 10px;
+    }
+
+    /* FOOTER */
+    .whole-page .footer {
+        height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .whole-page .footer .footer-contacts {
+        width: 90%;
+        margin: 0 auto;
+        grid-column: 1/2;
+        font-size: 0.9rem;
+
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .whole-page .footer .footer-contacts div {
+        margin: 5px;
+    }
+
+    .whole-page .footer .footer-contacts .fb {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .whole-page .footer .footer-contacts .github {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .whole-page .footer .footer-contacts .gmail {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .whole-page .footer .footer-contacts .mobile-num {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .whole-page .footer .footer-copyright {
+        grid-column: 1/2;
+        margin-top: 50px;
+        padding: 20px;
+    }
 }
